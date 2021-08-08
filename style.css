@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Hind+Siliguri:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 7vmin;
+    font-family: 'Cardo', serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.left {
+    width: 65vw;
+    height: 100vh;
+    background-color: #363457;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    background-color: #465C69;
+
+}
+
+.right-container {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 40vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right-content {
+    text-align: center;
+    /* width: 20vw; */
+
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 3vmin;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+input {
+    margin: 2rem 0;
+    width: 10vw;
+}
+
+.left-container {
+    font-size: 3vmin;
+    width: 42vw;
+    height: 60vh;
+    /* background-color: pink; */
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    border-radius: 10px;
+}
+
+.statement {
+    position: absolute;
+    left: 40%;
+    margin-top: 70px;
+}
+
+.main-left-content {
+    color: whitesmoke;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+.main-left-content p {
+    padding-top: 20px;
+}
+
+.sub-heading {
+    text-align: center;
+}
+
+ul {
+    padding: 30px;
+    text-align: left;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100vw;
+        height: 50vh
+    }
+
+    .left-container {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top: 10%;
+        width: 100vw;
+    }
+
+    .right-container {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 55vh;
+        width: 70vw;
+        height: 30vh;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+
+    .main-right-content {
+        width: 70vw;
+        height: 40vh;
+        text-align: center;
+
+    }
+
+    label {
+        text-align: center;
+        font-size: 4vmin;
+    }
+
+    input {
+        width: 30vw;
+    }
+
+}
