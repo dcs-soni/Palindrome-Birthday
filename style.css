@@ -79,6 +79,17 @@ input {
     border-radius: 10px;
 }
 
+.check {
+    display: block;
+    text-align: center;
+    width: 5vw;
+    height: 3vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .statement {
     position: absolute;
     left: 40%;
@@ -157,7 +168,7 @@ li {
     }
 
     input {
-        width: 30vw;
+        width: 40vw;
     }
 
 }
