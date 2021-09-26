@@ -46,11 +46,11 @@ function getAllDateFormats(date) {
     var yyyymmdd = date.year + date.month + date.day;
     var ddmmyy = date.day + date.month + date.year.slice(-2);
     var mmddyy = date.month + date.day + date.year.slice(-2);
-    var yymmdd = date.year.slice(-2) + date.month + date.day;
+    var yyddmm = date.year.slice(-2) + date.day + date.month;
 
-    console.log([ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd]);
+    console.log([ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yyddmm]);
 
-    return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
+    return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yyddmm];
 }
 
 function checkPalindromeForAllDateFormats(date) {
@@ -86,9 +86,9 @@ function getNextDate(date) {
     var month = date.month;
     var year = date.year;
 
-    var daysInMonth = [31, 28, 31, 30, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-    if(month == 2) {
+    if(month === 2) {
         //check leap year
         if(isLeapYear(year)) {
             if(day > 29) {
@@ -104,9 +104,10 @@ function getNextDate(date) {
     }
 
     else {
-        if(day > daysInMonth[month - 1]);
-        day = 1;
-        month++;
+        if(day > daysInMonth[month - 1]) {
+            day = 1;
+            month++;
+        }  
     }
 
 
