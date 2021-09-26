@@ -125,6 +125,7 @@ li {
     right: 4rem;
     width: 50px;
     top: 2rem;
+    z-index: 1;
 
 }
 
